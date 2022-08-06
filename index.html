@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/elegant.css" />
     <link rel="stylesheet" href="css/typicons.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -434,11 +435,17 @@
               a feel of what are you offering to them. It should be simple and
               beautifuly crafted
             </p>
-            <img src="images/about/01.jpg" class="img-responsive" />
+            <a data-fancybox="about-img" href="images/about/01.jpg">
+              <img src="images/about/01.jpg" class="img-responsive" />
+            </a>
           </div>
           <div class="about-block">
-            <img src="images/about/02.jpg" class="img-responsive" />
-            <img src="images/about/03.jpg" class="img-responsive" />
+            <a data-fancybox="about-img" href="images/about/02.jpg">
+              <img src="images/about/02.jpg" class="img-responsive" />
+            </a>
+            <a data-fancybox="about-img" href="images/about/03.jpg">
+              <img src="images/about/03.jpg" class="img-responsive" />
+            </a>
           </div>
         </div>
       </div>
@@ -456,25 +463,45 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#!" class="project">
+              <a
+                data-fancybox="projects-img"
+                href="images/projects/01.jpg"
+                class="project"
+                data-options='{"caption" : "MODERN LIVING ROOM"}'
+              >
                 <img src="images/projects/01.jpg" />
                 <div class="project-name">MODERN LIVING ROOM</div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#!" class="project">
+              <a
+                data-fancybox="projects-img"
+                href="images/projects/02.jpg"
+                class="project"
+                data-options='{"caption" : "MODERN LIVING ROOM"}'
+              >
                 <img src="images/projects/02.jpg" />
                 <div class="project-name">MODERN LIVING ROOM</div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#!" class="project">
+              <a
+                data-fancybox="projects-img"
+                href="images/projects/03.jpg"
+                class="project"
+                data-options='{"caption" : "MODERN LIVING ROOM"}'
+              >
                 <img src="images/projects/03.jpg" />
                 <div class="project-name">MODERN LIVING ROOM</div>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#!" class="project">
+              <a
+                data-fancybox="projects-img"
+                href="images/projects/04.jpg"
+                class="project"
+                data-options='{"caption" : "MODERN LIVING ROOM"}'
+              >
                 <img src="images/projects/04.jpg" />
                 <div class="project-name">MODERN LIVING ROOM</div>
               </a>
@@ -585,6 +612,7 @@
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
