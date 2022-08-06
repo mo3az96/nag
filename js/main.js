@@ -112,4 +112,15 @@ $(document).ready(function () {
     $(".search-overlay,.search-form").fadeOut(400);
     $(".search-cont").removeClass("active");
   });
+
+  /***** CatPage *****/
+  $(".main-cat-link.active").siblings(".sub-cats-list").show();
+  $(".sub-cat-link.active").parents(".sub-cats-list").show();
+
+  $(".main-cat-link>span").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var parent = $(this).parent(".main-cat-link");
+    parent.toggleClass("active").siblings(".sub-cats-list").slideToggle();
+  });
 });
