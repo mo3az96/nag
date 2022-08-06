@@ -2,8 +2,9 @@
   --primary-color: #ffce76;
   --secondery-color: #181817;
   --text-color: #fff;
-  --third-color:#f7941d;
+  --third-color: #f7941d;
   --bg-color: #181817;
+  --sal-duration: 1s;
 }
 
 @-webkit-keyframes vibe {
@@ -1204,6 +1205,9 @@ header {
   }
 }
 
+section {
+  overflow: hidden;
+}
 section.feats-sec {
   background-color: var(--bg-color);
   padding: 80px 0 170px;

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/elegant.css" />
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/sal.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -184,11 +185,21 @@
               <div class="main-slide">
                 <img src="images/main/01.jpg" class="img-responsive" />
                 <div class="main-text">
-                  <span class="main-span">
+                  <span class="main-span" data-sal="slide-up">
                     Welcome To <mark>Elnagar</mark></span
                   >
-                  <h2 class="main-title">YOU ARE IN GOOD HAND WITH US</h2>
-                  <p class="main-desc">
+                  <h2
+                    class="main-title"
+                    data-sal="slide-up"
+                    style="--sal-delay: 0.2s"
+                  >
+                    YOU ARE IN GOOD HAND WITH US
+                  </h2>
+                  <p
+                    class="main-desc"
+                    data-sal="slide-up"
+                    style="--sal-delay: 0.4s"
+                  >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore.
                   </p>
@@ -213,20 +224,28 @@
     <!-- Start Feats -->
     <section class="feats-sec">
       <div class="container">
-        <h3 class="sec-title">
+        <h3 class="sec-title" data-sal="zoom-in">
           why choose us
           <span class="border"><span></span></span>
         </h3>
         <div class="feats-cont">
           <div class="feats-list">
-            <div class="feat-item">
+            <div
+              class="feat-item"
+              data-sal="slide-right"
+              style="--sal-delay: 0.2s"
+            >
               <h4 class="feat-title">MORDERN DESIGN</h4>
               <p class="feat-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="feat-item">
+            <div
+              class="feat-item"
+              data-sal="slide-right"
+              style="--sal-delay: 0.4s"
+            >
               <h4 class="feat-title">UNIQUE QUALITY</h4>
               <p class="feat-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -234,18 +253,26 @@
               </p>
             </div>
           </div>
-          <div class="feats-img">
+          <div class="feats-img" data-sal="zoom-in" style="--sal-delay: 0.5s">
             <img src="images/features/01.png" class="img-responsive" />
           </div>
           <div class="feats-list">
-            <div class="feat-item">
+            <div
+              class="feat-item"
+              data-sal="slide-left"
+              style="--sal-delay: 0.2s"
+            >
               <h4 class="feat-title">HONEST PRICES</h4>
               <p class="feat-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="feat-item">
+            <div
+              class="feat-item"
+              data-sal="slide-left"
+              style="--sal-delay: 0.4s"
+            >
               <h4 class="feat-title">GREAT SUPPORT</h4>
               <p class="feat-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -261,11 +288,11 @@
     <!-- Start Bestseller -->
     <section class="bestseller-sec">
       <div class="container">
-        <h3 class="sec-title">
+        <h3 class="sec-title" data-sal="zoom-in">
           OUR TOP SELLING
           <span class="border"><span></span></span>
         </h3>
-        <div class="products-grid">
+        <div class="products-grid" data-sal="zoom-out" style="--sal-delay: 0.2s">
           <div class="product-item">
             <div class="img-here">
               <a href="product.html" class="product-img">
@@ -421,13 +448,13 @@
       style="background-image: url(images/about/bg.jpg)"
     >
       <div class="container">
-        <h3 class="sec-title">
+        <h3 class="sec-title" data-sal="zoom-in">
           ABOUT US
           <span class="border"><span></span></span>
         </h3>
         <div class="about-home-cont">
-          <div class="about-block">
-            <p>
+          <div class="about-block" >
+            <p data-sal="slide-up" style="--sal-delay: 0.2s">
               Here you can write about your awesome bio to let the audience get
               a feel of what are you offering to them. It should be simple and
               beautifuly crafted to describe you in just a couple of sentences
@@ -435,15 +462,15 @@
               a feel of what are you offering to them. It should be simple and
               beautifuly crafted
             </p>
-            <a data-fancybox="about-img" href="images/about/01.jpg">
+            <a data-fancybox="about-img" href="images/about/01.jpg" data-sal="zoom-out" style="--sal-delay: 0.4s">
               <img src="images/about/01.jpg" class="img-responsive" />
             </a>
           </div>
           <div class="about-block">
-            <a data-fancybox="about-img" href="images/about/02.jpg">
+            <a data-fancybox="about-img" href="images/about/02.jpg" data-sal="zoom-in" style="--sal-delay: 0.6s">
               <img src="images/about/02.jpg" class="img-responsive" />
             </a>
-            <a data-fancybox="about-img" href="images/about/03.jpg">
+            <a data-fancybox="about-img" href="images/about/03.jpg" data-sal="zoom-out" style="--sal-delay: 0.8s">
               <img src="images/about/03.jpg" class="img-responsive" />
             </a>
           </div>
@@ -454,7 +481,7 @@
 
     <!-- Start Projects -->
     <section class="projects-sec">
-      <h3 class="sec-title">
+      <h3 class="sec-title" data-sal="zoom-in">
         OUR PROJECT
         <span class="border"><span></span></span>
       </h3>
@@ -613,6 +640,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/sal.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

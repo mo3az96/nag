@@ -1,5 +1,8 @@
 $(window).on("load", function () {
   $("body").removeClass("overflow");
+  sal({
+    once: false,
+  });
 });
 $(document).ready(function () {
   /***** Menu *****/
