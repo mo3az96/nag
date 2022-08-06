@@ -1401,6 +1401,151 @@ section.projects-sec {
   }
 }
 
+.contact-title {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.contact-form {
+  -webkit-padding-end: 70px;
+          padding-inline-end: 70px;
+}
+@media (max-width: 1199px) {
+  .contact-form {
+    padding: 0;
+  }
+}
+
+label {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0px 15px 5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.form-control {
+  border: 2px solid #fff;
+  background-color: #fff;
+  height: 45px;
+  color: var(--secondery-color);
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+  padding: 0 25px;
+  transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+  border-color: var(--third-color);
+  box-shadow: none;
+  outline: none;
+}
+.form-control::-moz-placeholder {
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.form-control:-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.form-control::placeholder {
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.form-control:not(input) {
+  height: 150px;
+  resize: none;
+  padding: 15px 25px;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 150px;
+  height: 45px;
+  background-color: var(--primary-color);
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: var(--secondery-color);
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: var(--third-color);
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .contact-methods {
+    margin-top: 40px;
+  }
+}
+
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contact-method .method-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.contact-method .method-head span {
+  width: 33px;
+  font-size: 22px;
+  color: var(--primary-color);
+}
+.contact-method .method-head strong {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-method .method-value {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 33px;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-method .method-value:not(span):hover {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.contact-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact-socials a {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  margin: 0 9px;
+  font-size: 30px;
+}
+.contact-socials a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 footer {
   background-color: var(--bg-color);
   padding: 70px 0 90px;
