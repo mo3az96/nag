@@ -123,4 +123,16 @@ $(document).ready(function () {
     var parent = $(this).parent(".main-cat-link");
     parent.toggleClass("active").siblings(".sub-cats-list").slideToggle();
   });
+
+  var swiper = new Swiper(".gallery-thumbs", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".gallery-top", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper,
+    },
+  });
 });
