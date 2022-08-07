@@ -213,6 +213,10 @@ a:focus {
   padding: 0;
   background-color: transparent;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+.search-btn:hover, .search-btn:focus {
+  color: var(--third-color);
 }
 
 .nav-list {
@@ -234,7 +238,7 @@ a:focus {
   position: relative;
   transition: all 0.3s ease-in-out;
 }
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -298,7 +302,7 @@ html[dir=ltr] .nav-link::after {
   font-size: 14px;
   transition: all 0.3s ease-in-out;
 }
-.level-sub a:hover {
+.level-sub a:hover, .level-sub a:focus {
   color: var(--third-color);
   text-decoration: none;
 }
@@ -422,7 +426,7 @@ html[dir=ltr] .nav-link::after {
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
-.product-item .product-name:hover {
+.product-item .product-name:hover, .product-item .product-name:focus {
   text-decoration: none;
 }
 @media (max-width: 991px) {
@@ -460,7 +464,7 @@ html[dir=ltr] .nav-link::after {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.product-item .product-link:hover {
+.product-item .product-link:hover, .product-item .product-link:focus {
   text-decoration: none;
 }
 .product-item .product-link span {
@@ -918,10 +922,10 @@ html[dir=ltr] .nav-link::after {
   font-size: 30px;
   font-weight: 600;
 }
-.project:hover {
+.project:hover, .project:focus {
   text-decoration: none;
 }
-.project:hover img {
+.project:hover img, .project:focus img {
   transform: scale(1.2);
 }
 
@@ -1813,7 +1817,7 @@ footer {
   .nav-link {
     color: var(--secondery-color);
   }
-  .nav-link:hover {
+  .nav-link:hover, .nav-link:focus {
     text-decoration: none;
     color: var(--primary-color);
   }

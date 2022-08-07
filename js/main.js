@@ -7,6 +7,7 @@ $(window).on("load", function () {
 $(document).ready(function () {
   /***** Menu *****/
   if ($(window).width() <= 991) {
+    $("*").removeAttr("data-sal");
     $(".menu-btn").click(function () {
       $(".nav-overlay").fadeIn(500);
       $(".header-nav").addClass("active");
