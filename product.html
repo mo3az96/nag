@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/elegant.css" />
     <link rel="stylesheet" href="css/typicons.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/sal.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -179,7 +180,9 @@
     <section class="page-content">
       <div class="container">
         <div class="row">
-          <h2 class="page-title col-xs-12 xs-title product-title">CORONA CHAIR</h2>
+          <h2 class="page-title col-xs-12 xs-title product-title">
+            CORONA CHAIR
+          </h2>
           <div class="col-lg-6 col-xs-12">
             <div class="product-gallery">
               <div class="swiper gallery-top">
@@ -289,7 +292,15 @@
               minus dolore quod consequuntur dolor unde laudantium rerum? Magnam
               ratione iste corporis!
             </p>
-            <a href="#!" class="buy-now btn btn-primary"> buy now </a>
+            <a
+              href="#!"
+              class="buy-now btn btn-primary"
+              type="button"
+              data-toggle="modal"
+              data-target="#enqueryForm"
+            >
+              Ask about this product
+            </a>
           </div>
         </div>
       </div>
@@ -384,10 +395,72 @@
     <div class="arrow-top">
       <span class="arrow_carrot-up"></span>
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enqueryForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="enqueryFormLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span class="typcn typcn-times"></span>
+            </button>
+            <h4 class="modal-title" id="enqueryFormLabel">CORONA CHAIR</h4>
+          </div>
+          <div class="modal-body">
+            <form class="enqrey-form">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Full Name"
+                />
+              </div>
+              <div class="form-group">
+                <label>E-Mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your E-Mail"
+                />
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Enter Your Telephone"
+                />
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  class="form-control"
+                  placeholder="Enter Your Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/sal.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
